@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <ul>
+        {% for tarefa in tarefas %}
+            <li>
+                <a href="{% url 'detalhar_tarefa' tarefa.pk %}">{{ tarefa.titulo }}</a>
+                {% if tarefa.concluida %}<span style="color:green">(Concluída)</span>{% endif %}
+            </li>
+        {% empty %}
+            <li>Nenhuma tarefa cadastrada.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
