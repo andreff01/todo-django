@@ -11,7 +11,7 @@ Este projeto é um sistema web simples para gerenciamento de tarefas, desenvolvi
 
 ## Integrantes
 - André Ferreira
-- [Adicionar outros nomes aqui]
+- Larisse Pessoa Reis
 
 ## Instruções de Execução
 1. Clone o repositório:
